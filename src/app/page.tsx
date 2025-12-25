@@ -153,12 +153,18 @@ export default function Page() {
 
           {/* OVERVIEW */}
           <div className="grid md:grid-cols-2 gap-6">
-            <Card className="bg-transparent border-none md:col-span-2">
+            <Card
+              title=""
+              className="bg-transparent border-none md:col-span-2"
+            >
               {/* LiteStats tự refresh nội bộ (4 phút) */}
               <LiteStats />
             </Card>
 
-            <Card className="bg-transparent border-none md:col-span-2">
+            <Card
+              title=""
+              className="bg-transparent border-none md:col-span-2"
+            >
               <SystemRequirements />
             </Card>
           </div>

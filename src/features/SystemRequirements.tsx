@@ -1,13 +1,30 @@
 'use client'
 import { useEffect, useState } from "react";
 import { api } from "../api/netrumApi";
-import { Power, Cpu, MemoryStick, HardDrive, Network } from "lucide-react";
-
+import { Power, Cpu, MemoryStick, HardDrive, Network, LucideIcon } from "lucide-react";
+type RequirementCardProps = {
+  title: string
+  value: string | number | null
+  icon: LucideIcon
+  loading?: boolean
+}
+type SystemRequirementData = {
+  CORES?: number
+  RAM?: number
+  STORAGE?: number
+  DOWNLOAD_SPEED?: number
+  UPLOAD_SPEED?: number
+}
 function Skeleton({ className = "" }) {
   return <div className={`animate-pulse bg-white/30 rounded ${className}`} />;
 }
 
-function RequirementCard({ title, value, icon: Icon, loading }) {
+function RequirementCard({ 
+  title,
+  value,
+  icon: Icon,
+  loading,
+}: RequirementCardProps) {
   return (
     <div className="relative overflow-hidden rounded-xl border border-border bg-card px-4 py-3">
       <div className="flex items-center justify-between">
@@ -26,7 +43,7 @@ function RequirementCard({ title, value, icon: Icon, loading }) {
 }
 
 export default function SystemRequirements() {
-  const [data, setData] = useState({});
+  const [data, setData] = useState<SystemRequirementData>({});
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
