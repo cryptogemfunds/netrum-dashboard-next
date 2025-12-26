@@ -1,36 +1,55 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+🚀 Netrum Node Dashboard
 
-## Getting Started
+A modern, lightweight Node Monitoring Dashboard built with Next.js, designed to visualize blockchain node data in real-time using public APIs — without any backend or database.
 
-First, run the development server:
+🌐 Live Demo
 
-```bash
+🔗 https://netrum.nodesafe-app.xyz
+
+📦 GitHub Repository
+
+🔗 https://github.com/cryptogemfunds/netrum-dashboard-next
+
+✨ Features
+
+📊 Real-time node statistics
+
+⚡ Auto-refresh with intelligent timeout handling
+
+🧠 Smart API caching to prevent overload
+
+📡 Pure frontend architecture (no backend)
+
+🔒 Safe request handling with fallback logic
+
+📱 Fully responsive UI (desktop & mobile)
+
+☁️ Deployed on Vercel
+
+⚙️ Local Development
+1️⃣ Clone the repository
+git clone https://github.com/cryptogemfunds/netrum-dashboard-next.git
+cd netrum-dashboard-next
+
+2️⃣ Install dependencies
+npm install
+
+3️⃣ Start development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Open in browser:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+http://localhost:3000
 
-## Learn More
+🌍 Production Deployment (Vercel)
 
-To learn more about Next.js, take a look at the following resources:
+Push project to GitHub
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Go to https://vercel.com
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Import repository
 
-## Deploy on Vercel
+Select Next.js
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Deploy
