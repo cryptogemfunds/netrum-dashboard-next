@@ -1,48 +1,86 @@
-🚀 Netrum Node Dashboard
+# 🚀 Netrum Node Dashboard
 
-A modern, lightweight Node Monitoring Dashboard built with Next.js, designed to visualize blockchain node data in real-time using public APIs — without any backend or database.
+A modern **Node Monitoring Dashboard** built with **Next.js**, designed to display real-time network and node information using public APIs — without backend or database.
 
-🌐 Live Demo
+---
 
-🔗 https://netrum.nodesafe-app.xyz
+## 🌐 Live Demo
 
-📦 GitHub Repository
+🔗 **https://netrum.nodesafe-app.xyz**
 
-🔗 https://github.com/cryptogemfunds/netrum-dashboard-next
+---
 
-✨ Features
+## 📦 GitHub Repository
 
-📊 Real-time node statistics
+🔗 **https://github.com/cryptogemfunds/netrum-dashboard-next**
 
-⚡ Auto-refresh with intelligent timeout handling
+---
 
-🧠 Smart API caching to prevent overload
+## ✨ Features
 
-📡 Pure frontend architecture (no backend)
+- 📊 Real-time node statistics
+- 🔄 Auto-refresh with smart rate limiting
+- 🧠 API request caching & timeout handling
+- 🚫 No backend, no database
+- ⚡ Optimized for performance
+- 📱 Fully responsive (desktop & mobile)
 
-🔒 Safe request handling with fallback logic
+---
 
-📱 Fully responsive UI (desktop & mobile)
+## 🧱 Tech Stack
 
-☁️ Deployed on Vercel
+| Layer | Technology |
+|------|------------|
+| Framework | Next.js (App Router) |
+| Language | JavaScript (ES6+) |
+| Styling | Tailwind CSS |
+| API | REST (fetch with timeout & cache) |
+| Hosting | Vercel |
 
-⚙️ Local Development
-1️⃣ Clone the repository
+
+---
+
+## 📁 Project Structure
+
+src/
+├── api/
+│ └── netrumApi.js # API handler (cache + timeout)
+├── features/
+│ ├── ActiveNodes.jsx
+│ ├── LiteStats.jsx
+│ ├── NodeStats.jsx
+│ ├── Mining.jsx
+│ ├── SystemRequirements.jsx
+├── components/
+│ ├── Header.jsx
+│ ├── Footer.jsx
+│ └── Card.jsx
+├── app/
+│ └── page.tsx
+
+
+---
+
+## 🚀 Getting Started (Local Development)
+
+### 1️⃣ Clone repository
+```bash
 git clone https://github.com/cryptogemfunds/netrum-dashboard-next.git
 cd netrum-dashboard-next
 
 2️⃣ Install dependencies
+
 npm install
 
-3️⃣ Start development server
-npm run dev
+3️⃣ Run development server
 
+npm run dev
 
 Open in browser:
 
 http://localhost:3000
 
-🌍 Production Deployment (Vercel)
+🌍 Deploy to Vercel
 
 Push project to GitHub
 
@@ -50,6 +88,6 @@ Go to https://vercel.com
 
 Import repository
 
-Select Next.js
+Select Next.js framework
 
-Deploy
+Deploy 🚀
