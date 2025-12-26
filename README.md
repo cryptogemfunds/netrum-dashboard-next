@@ -1,93 +1,63 @@
-# 🚀 Netrum Node Dashboard
+# Netrum Node Dashboard
 
-A modern **Node Monitoring Dashboard** built with **Next.js**, designed to display real-time network and node information using public APIs — without backend or database.
+Frontend-only Node Dashboard built with **Next.js (latest)** to visualize Netrum node data using public APIs.
 
----
-
-## 🌐 Live Demo
-
-🔗 **https://netrum.nodesafe-app.xyz**
-
----
-
-## 📦 GitHub Repository
-
-🔗 **https://github.com/cryptogemfunds/netrum-dashboard-next**
+**Live Demo:** https://netrum.nodesafe-app.xyz  
+**GitHub Repository:** https://github.com/cryptogemfunds/netrum-dashboard-next
 
 ---
 
 ## ✨ Features
 
-- 📊 Real-time node statistics
-- 🔄 Auto-refresh with smart rate limiting
-- 🧠 API request caching & timeout handling
-- 🚫 No backend, no database
-- ⚡ Optimized for performance
-- 📱 Fully responsive (desktop & mobile)
+- Built with **Next.js (latest version)**
+- Frontend-only (no backend, no database)
+- API integration with **30-second timeout per request**
+- Live node statistics:
+  - Lite Stats
+  - Active Nodes
+  - Node Stats
+  - Tasks & Mining
+  - Balance
+- Graceful handling when APIs are slow or unreachable
+- Clean UI with NetrumLabs / Base-style branding
+- Deployed on **Vercel**
+- Custom **.xyz domain**
 
 ---
 
 ## 🧱 Tech Stack
 
-| Layer | Technology |
-|------|------------|
-| Framework | Next.js (App Router) |
-| Language | JavaScript (ES6+) |
-| Styling | Tailwind CSS |
-| API | REST (fetch with timeout & cache) |
-| Hosting | Vercel |
+- Framework: Next.js
+- Language: JavaScript / TypeScript
+- Styling: Tailwind CSS
+- Deployment: Vercel
 
 
 ---
 
-## 📁 Project Structure
+## ⏱ API Timeout
 
-src/
-├── api/
-│ └── netrumApi.js # API handler (cache + timeout)
-├── features/
-│ ├── ActiveNodes.jsx
-│ ├── LiteStats.jsx
-│ ├── NodeStats.jsx
-│ ├── Mining.jsx
-│ ├── SystemRequirements.jsx
-├── components/
-│ ├── Header.jsx
-│ ├── Footer.jsx
-│ └── Card.jsx
-├── app/
-│ └── page.tsx
+All API requests are configured with a **30-second timeout**.
 
+If an API does not respond within the timeout:
+- The request fails safely
+- The UI displays a fallback state instead of crashing
+
+A manual API timeout test is available directly in the dashboard UI.
 
 ---
 
-## 🚀 Getting Started (Local Development)
+## 🌐 Deployment & Domain
 
-### 1️⃣ Clone repository
+- Hosting: Vercel
+- Domain: `netrum.nodesafe-app.xyz`
+
+---
+
+## 📦 Local Development
+
 ```bash
 git clone https://github.com/cryptogemfunds/netrum-dashboard-next.git
 cd netrum-dashboard-next
-
-2️⃣ Install dependencies
-
 npm install
-
-3️⃣ Run development server
-
 npm run dev
-
-Open in browser:
-
-http://localhost:3000
-
-🌍 Deploy to Vercel
-
-Push project to GitHub
-
-Go to https://vercel.com
-
-Import repository
-
-Select Next.js framework
-
-Deploy 🚀
